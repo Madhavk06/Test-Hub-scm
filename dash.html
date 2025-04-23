@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            
+            <div class="profile">
+                <img src="PHOTO-2024-11-05-20-50-24.jpg" alt="User" class="profile-pic">
+                <h3 class="username">Madhav Kashyap</h3>
+                <p class="role">Student</p>
+            </div>
+
+            <h1>Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="login3.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="content">
+            <header>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Search..." id="search-input">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <h2>Subjects</h2>
+            </header>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Subject 1</h3>
+                    <p>Front End Engineering</p>
+                    <a href="guidefee.html" class="btn">Take Test</a>
+                </div>
+                <div class="card">
+                    <h3>Subject 2</h3>
+                    <p>Python</p>
+                    <a href="guidepython.html" class="btn">Take Test</a>
+                </div>
+                <div class="card">
+                    <h3>Subject 3</h3>
+                    <p>Java</p>
+                    <a href="guidejava.html" class="btn">Take Test</a>
+                </div>
+                <div class="card locked">
+                    <h3>Subject 4</h3>
+                    <p>Mathematics</p>
+                    <div class="lock-overlay">
+                        <i class="fas fa-lock"></i>
+                        <p>This subject is currently locked. Please wait...</p>
+                    </div>
+                    <button class="locked-btn" disabled>Locked</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
