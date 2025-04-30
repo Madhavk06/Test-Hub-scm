@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Interface</title>
+    <link rel="stylesheet" href="guide.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exam Guidelines</h1>
+        <ol class="guidelines">
+            <li>Read each question carefully.</li>
+            <li>Choose the best answer from the options provided.</li>
+            <li>You can skip questions and come back to them later.</li>
+            <li>You cannot select more than one option.</li>
+            <li>Once you submit the test, you are not allowed to make any changes in the test.</li>
+            <li>You will not get a second chance.</li>
+            <li>Do not refresh the page while taking the exam.</li>
+            <li>you only get 10 seconds for one question.</li>
+            <li>after 10 seconds next question automatically appear.</li>
+            <li>Good luck!</li>
+        </ol>
+        <label class="checkbox-label">
+            <input type="checkbox" id="agreementCheckbox"> I agree to all these guidelines
+        </label>
+        <br><br>
+        <button id="nextButton" style="display: none;" onclick="location.href='quesfee.html';">Next</button>
+    </div>
+
+    <script>
+        const checkbox = document.getElementById('agreementCheckbox');
+        const nextButton = document.getElementById('nextButton');
+
+        checkbox.addEventListener('change', function() {
+            nextButton.style.display = checkbox.checked ? 'inline-block' : 'none';
+        });
+    </script>
+</body>
+</html>
